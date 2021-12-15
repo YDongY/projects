@@ -1,0 +1,3 @@
+Watching for file changes with StatReloader
+[15/Dec/2021 09:16:36] "GET /myapp/ HTTP/1.1" 200 169
+[15/Dec/2021 09:16:48] "GET / HTTP/1.1" 200 169
