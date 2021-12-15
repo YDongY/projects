@@ -155,7 +155,7 @@ $ apt-get install python3-certbot-nginx
 2. 执行下面命令的时候，最好把 `nginx.conf` 文件中的 server_name 更改为对应域名，这样在生成证书时方便程序自己做配置
 
 ```bash
-$ $ sudo certbot --nginx --nginx-server-root=/usr/local/nginx/conf -d console.bytefun.link --register-unsafely-without-email
+$ $ sudo certbot --nginx --nginx-server-root=/usr/local/nginx/conf -d example.com --register-unsafely-without-email
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator nginx, Installer nginx
 Registering without email!
@@ -169,7 +169,7 @@ https://acme-v02.api.letsencrypt.org/directory
 (A)gree/(C)ancel: A
 Obtaining a new certificate
 Performing the following challenges:
-http-01 challenge for console.bytefun.link
+http-01 challenge for example.com
 Waiting for verification...
 Cleaning up challenges
 Deploying Certificate to VirtualHost /usr/local/nginx/conf/nginx.conf
@@ -185,17 +185,17 @@ Select the appropriate number [1-2] then [enter] (press 'c' to cancel): 2
 Redirecting all traffic on port 80 to ssl in /usr/local/nginx/conf/nginx.conf
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Congratulations! You have successfully enabled https://console.bytefun.link
+Congratulations! You have successfully enabled https://example.com
 
 You should test your configuration at:
-https://www.ssllabs.com/ssltest/analyze.html?d=console.bytefun.link
+https://www.ssllabs.com/ssltest/analyze.html?d=example.com
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/console.bytefun.link/fullchain.pem
+   /etc/letsencrypt/live/example.com/fullchain.pem
    Your key file has been saved at:
-   /etc/letsencrypt/live/console.bytefun.link/privkey.pem
+   /etc/letsencrypt/live/example.com/privkey.pem
    Your cert will expire on 2022-03-14. To obtain a new or tweaked
    version of this certificate in the future, simply run certbot again
    with the "certonly" option. To non-interactively renew *all* of
